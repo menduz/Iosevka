@@ -6,7 +6,7 @@ designer = 'Belleve Invis'
 description = 'Spatial efficient monospace font family for programming. Built from code. http://be5invis.github.io/Iosevka'
 
 leading = 1250     # Default line height times 1000.
-descenderPad = 65  # Additional line height, added to descender.
+descenderPad = 0   # Additional line height, added to descender.
 width = 500        # Character width. Increase this if you think that Iosevka is too narrow.
 cap = 735          # Cap height (as well as ascender).
 xheight = 530      # X-height.
@@ -72,6 +72,8 @@ lllcrowdedness = 3.33333333
 
 spacing = 1 # Spacing indicator
 
+menuWidth = 5 # Menu width
+
 # Powerline-specific parameters
 powerlineScaleY = 1 # Vertical scale
 powerlineScaleX = 1 # Horizontal scale
@@ -92,6 +94,9 @@ enableCvSs = true
 
 # Whether to generate ligation
 enableLigation = true
+
+# Excluded code points
+excludedCodePointRanges = []
 
 [verbose]
 verbose = true
@@ -244,18 +249,24 @@ spacing = 3
 # NOTE: this section is highly experimental
 # HANDLE WITH EXTREME CARE
 # Expanded : I heard someone want it being wider...
-[wd-expanded.multiplies]
+[wd-extended.multiplies]
 width = 1.152 # 576mem for normal char
 sb    = 1.375
-[expanded]
-inherits = ['wd-expanded']
+[extended]
+inherits = ['wd-extended']
+
+[menu-subfamily-extended]
+menuWidth = 7
 
 # Compressed : And someone else want it being narrower
-[wd-compressed.multiplies]
+[wd-condensed.multiplies]
 width = 0.9
 sb = 0.9
-[compressed]
-inherits = ['wd-compressed']
+[condensed]
+inherits = ['wd-condensed']
+
+[menu-subfamily-condensed]
+menuWidth = 3
 
 # EXPERIMENTAL EXPERIMENTAL EXPERIMENTAL
 # Diversity: Having more width variations
@@ -560,3 +571,8 @@ powerlineShiftX = 500
 # unicode = 57600 # 0xE100
 # featureTag = 'XV00'
 # sequence = '<*>'
+
+
+# Exclude code points
+[exclude-check-and-cross-symbol.appends]
+excludedCodePointRanges = [[10003, 10008]]
