@@ -1,0 +1,59 @@
+[buildPlans.iosevka-mz]                             # <iosevka-mz> is your plan name
+family = "Iosevka MZ"                               # Font menu family name
+design = ["leading-1250", 'v-f-straight', 'v-at-threefold', 'v-zero-dotted', 'v-a-doublestorey', 'v-g-singlestorey', 'v-l-serifed', 'v-i-serifed', 'v-asterisk-low', 'v-t-cross', 'v-three-flattop', 'v-y-straight', 'termlig'] # Customize styles
+
+# Weight mappings (style => shape weight, CSS weight)
+#   Shape weight : affects the shape of the glyphs
+#   CSS weight   : affects the font menu name and webfont CSS
+[buildPlans.iosevka-mz.weights.thin]
+shape = 100
+menu  = 100
+css   = 100
+
+[buildPlans.iosevka-mz.weights.extralight]
+shape = 200
+menu  = 200
+css   = 200
+
+[buildPlans.iosevka-mz.weights.light]
+shape = 300
+menu  = 300
+css   = 300
+
+[buildPlans.iosevka-mz.weights.regular]
+shape = 400
+menu  = 400
+css   = 400
+
+[buildPlans.iosevka-mz.weights.medium]
+shape = 500
+menu  = 500
+css   = 500
+
+[buildPlans.iosevka-mz.weights.semibold]
+shape = 600
+menu  = 600
+css   = 600
+
+[buildPlans.iosevka-mz.weights.bold]
+shape = 700
+menu  = 700
+css   = 700
+
+[buildPlans.iosevka-mz.weights.extrabold]
+shape = 800
+menu  = 800
+css   = 800
+
+[buildPlans.iosevka-mz.weights.heavy]
+shape = 900
+menu  = 900
+css   = 900
+
+# Override default building slant sets
+# Format: <upright|italic|oblique> = <"normal"|"italic"|"oblique">
+# When this section is absent, all slants would be built.
+[buildPlans.iosevka-mz.slants]
+upright = "normal"
+italic = "italic"
+oblique = "oblique"

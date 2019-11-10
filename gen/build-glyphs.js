@@ -1,4 +1,4 @@
-﻿'use strict';
+'use strict';
 var r1_buildFont, _r1_t0, _r1_t1, _r1_t2, _r1_t3, _r1_t4, _r1_t5, _r1_t6, _r1_t7, _r1_t13, _r1_t14, _r1_t15, _r1_t16, _r1_t17;
 var r1_Glyph = require('../support/glyph');
 var r1_Point = require('../support/point');
